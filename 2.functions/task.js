@@ -25,8 +25,7 @@ function summElementsWorker(...arr) {
     return 0;
   }
 
-  let sum = arr.reduce((now, num) => now + num, 0);
-  return sum;
+  return arr.reduce((now, num) => now + num, 0);
 }
 
 function differenceMaxMinWorker(...arr) {
@@ -37,8 +36,7 @@ function differenceMaxMinWorker(...arr) {
 
   let max = Math.max(...arr);
   let min = Math.min(...arr);
-  let difference = max - min;
-  return difference;
+  return max - min;
 }
 
 function differenceEvenOddWorker(...arr) {
@@ -55,8 +53,8 @@ function differenceEvenOddWorker(...arr) {
       sumOddElement += arr[i]; 
     }
   }
-  let difference = sumEvenElement - sumOddElement;
-  return difference;
+
+  return sumEvenElement - sumOddElement;
 }
 
 function averageEvenElementsWorker(...arr) {
@@ -73,7 +71,7 @@ function averageEvenElementsWorker(...arr) {
     return 0;
   }
 
-  return (sumEvenElement/countEvenElement);
+  return sumEvenElement/countEvenElement;
 }
 
 function makeWork (arrOfArr, func) {
